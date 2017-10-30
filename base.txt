@@ -1,0 +1,18 @@
+create database ale;
+use ale;
+
+
+create table empleado(
+codigoEmpleado int primary key,
+nombre varchar(80) not null,
+genero varchar(80) not null,
+edad int not null,
+direccion varchar(80) not null,
+cargo varchar(80) not null
+);
+
+
+insert into empleado values(1,'Ale','Femenino',20,'Zaragoza La Libertad','Administrador');
+insert into empleado values(2,'Diego','Masculino',20,'Zaragoza La Libertad','Gerente');
+
+select * from empleado
